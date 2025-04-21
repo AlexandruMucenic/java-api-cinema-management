@@ -1,0 +1,14 @@
+dependencies {
+  // JPA + Hibernate + PostgreSQL
+  implementation "org.springframework:spring-context-support:$springVersion"
+  implementation "org.springframework:spring-orm:$springVersion"
+  implementation "org.springframework.data:spring-data-jpa:$springDataVersion"
+  implementation "org.hibernate:hibernate-core:$hibernateVersion"
+  implementation "org.postgresql:postgresql:$postgresqlVersion"
+
+  // Connection pool
+  implementation "com.zaxxer:HikariCP:$hikariVersion"
+
+  // Jakarta
+  implementation "jakarta.xml.bind:jakarta.xml.bind-api:$jaxbapiVersion"
+}

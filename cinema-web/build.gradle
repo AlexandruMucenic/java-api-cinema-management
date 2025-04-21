@@ -1,0 +1,15 @@
+apply plugin: 'war'
+
+dependencies {
+    implementation project(':cinema-core')
+
+    // Spring MVC
+    implementation "org.springframework:spring-webmvc:$springVersion"
+
+    // Jackson JSON
+    implementation "com.fasterxml.jackson.core:jackson-databind:$jacksonDatabindVersion"
+    implementation "com.fasterxml.jackson.core:jackson-core:$jacksonDatabindVersion"
+
+    // Servlet API (compile‑only; provided by the container at runtime)
+    compileOnly "jakarta.servlet:jakarta.servlet-api:$javaxServeletApiVersion"
+}
