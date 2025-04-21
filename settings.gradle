@@ -1,0 +1,4 @@
+rootProject.name = 'cinema'
+include 'cinema-core'
+include 'cinema-web'
+
