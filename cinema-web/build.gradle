@@ -12,4 +12,7 @@ dependencies {
 
     // Servlet API (compile‑only; provided by the container at runtime)
     compileOnly "jakarta.servlet:jakarta.servlet-api:$javaxServeletApiVersion"
+
+    // Support for Java 8 date/time types
+    implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310'
 }
